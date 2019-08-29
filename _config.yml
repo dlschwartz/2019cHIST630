@@ -29,6 +29,7 @@ github_username:  dlschwartz
 
 # Build settings
 markdown: kramdown
+toc_depth: 1
 theme: minima
 plugins:
   - jekyll-feed
