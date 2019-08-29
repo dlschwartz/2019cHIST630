@@ -4,4 +4,4 @@ title: ODD Customization
 permalink: /odd/
 ---
 
-# Coming Soon!
+# Assignment details coming soon

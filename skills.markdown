@@ -4,4 +4,4 @@ title: Skills Presentation
 permalink: /skills/
 ---
 
-# Coming Soon!
+# Assignment details coming Soon!
