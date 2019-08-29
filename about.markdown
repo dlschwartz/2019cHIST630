@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Course Description
-permalink: /description/
+title: Welcome
+permalink: /about/
 ---
 
 
