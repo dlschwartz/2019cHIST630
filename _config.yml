@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: HIST 630 Syllabus
+title: Digital Methods for Historical Research
 email: daniel.schwartz@tamu.edu
 description: >- # this means to ignore newlines until "baseurl:"
   This is the Fall 2019 syllabus for HIST 630 Digital Methods for Historical Research

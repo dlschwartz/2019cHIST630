@@ -1,7 +1,7 @@
 ---
 layout: page
-title: History 630
-permalink: /about/
+title: Course Description
+permalink: /description/
 ---
 
 # Digital Methods for Historical Research
@@ -48,7 +48,7 @@ me if you encounter any problems.
 _____
 #### Expectations
 You will note in the class schedule that every class meeting has a heading for
-_Ludi_. This is a Latin word that translates roughly as "play things." I have
+_Ludi_. This is a Latin word we can translate as "play things." I have
 chosen this term because I want us all to think of class time as an opportunity
 to experiment, collaborate, offer feedback, and troubleshoot difficulties. In short,
 you should come to class expecting to _play around_ with the course material, topics,
