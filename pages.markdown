@@ -1,7 +1,8 @@
 ---
 layout: page
-title: GH-Pages Project
 permalink: /pages/
 ---
+
+## GH-Pages Assignment
 
 # Assignment details coming Soon!

@@ -20,7 +20,7 @@ _____
 | 15% | Class Participation |
 | 10% | [GitHub Pages Project](../pages) |
 | 10% | [Skill(s) Presentation](../skills) |
-| 35% | [TEI Encoding](../tei) |
+| 35% | [TEI Encoding](../encoding) |
 | 20% | [ODD Customization](../odd) |
 | 10% | [Documentation Wiki](../wiki) |
 

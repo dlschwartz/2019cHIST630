@@ -1,7 +1,8 @@
 ---
 layout: page
-title: ODD Customization
 permalink: /odd/
 ---
+
+## ODD Customization Assignment
 
 # Assignment details coming soon
