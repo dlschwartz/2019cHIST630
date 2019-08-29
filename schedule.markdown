@@ -7,7 +7,7 @@ permalink: /schedule/
 
 
 _____
-### 26 August
+## 26 August
 
 #### Discussion
 - Themes and approach of the courses
@@ -17,7 +17,7 @@ _____
 - Setting up a GitHub account
 
 _____
-### 5 September
+## 5 September
 
 #### Discussion
 - Alan Liu, "Imagining the New Media Encounter," in _Companion to Digital Literary Studies_, ed. Susan Schreibman and Ray Siemens (Oxford: Blackwell, 2008), <http://digitalhumanities.org:3030/companion/view?docId=blackwell/9781405148641/9781405148641.xml&chunk.id=ss1-3-1&toc.id=0&brand=9781405148641_brand>.
@@ -31,13 +31,12 @@ Humanities,” _Collaborative Research in the Digital Humanities_, ed. Willard M
  - Aaron Stewart, "Learning GitHub," _inLearning_, May 14, 2019, <https://www.linkedin.com/learning/learning-github>.
 
 _____
-### 12 September
+## 12 September
 
 #### Discussion
 - David Birnbaum, "What is XML and why should humanists care? An even gentler introduction to XML," August 28, 2015, <http://dh.obdurodon.org/what-is-xml.xhtml>.
 - Lou Burnard, “Introduction," What Is the Text Encoding Initiative?: How to Add Intelligent
-Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014,
-<https://books.openedition.org/oep/679..
+Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/679>.
 - Lou Burnard, “The TEI and XML,” What Is the Text Encoding Initiative?: How to Add Intelligent
 Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/680>.
 
@@ -50,7 +49,7 @@ Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition 
 
 
 _____
-### 19 September
+## 19 September
 _**There will be no regular class meeting on September 19 as I will be traveling. Instead, you should work on the GitHub Pages assignment.**_
 
 #### _Ludi_
@@ -63,7 +62,7 @@ _**There will be no regular class meeting on September 19 as I will be traveling
 
 
 _____
-### 26 September
+## 26 September
 
 #### _Ludi_
 - GitHub Pages and Jekyll
@@ -79,7 +78,7 @@ _____
 
 
 _____
-### 3 October
+## 3 October
 
 #### Discussion
 - "Tutorial: Introduction to Text Encoding and the TEI," _TEI by Example_, January 19, 2018, <https://teibyexample.org/modules/TBED00v00.htm>.
@@ -94,7 +93,7 @@ _____
  Prepare for class by reading several of the  "Tutorials" and "Examples" that you think will be relevant to your project.
 
 _____
-### 10 October
+## 10 October
 
 #### Discussion
 - Lou Burnard, "The TEI Cornucopia, Part One," What Is the Text Encoding Initiative?: How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/689>.
@@ -105,7 +104,7 @@ _____
 
 
 _____
-### 17 October
+## 17 October
 
 #### Discussion
 - Lou Burnard, "The TEI Header,” What Is the Text Encoding Initiative?: How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/691>.
@@ -116,7 +115,7 @@ _____
 
 
 _____
-### 24 October
+## 24 October
 
 #### Discussion
 - Lou Burnard, "Customizing the TEI,” What Is the Text Encoding Initiative?: How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/692>.
@@ -127,7 +126,7 @@ _____
 
 
 _____
-### 31 October
+## 31 October
 
 #### _Ludi_
 - TEI Customization
@@ -135,7 +134,7 @@ _____
 
 
 _____
-### 7 November
+## 7 November
 
 #### _Ludi_
 - TEI Publisher
@@ -144,7 +143,7 @@ _____
 
 
 _____
-### 14 November
+## 14 November
 
 #### _Ludi_
 - TEI Publisher
@@ -154,7 +153,7 @@ _____
 
 
 _____
-### 21 November
+## 21 November
 
 #### Short Skill(s) Presentations
 - See prompt for details
@@ -165,14 +164,14 @@ _____
  - Michelle Taylor and David A. Michelson, "TEI Encoding Manual for the Syriac Gazetteer," <https://github.com/srophe/srophe-app-data/wiki/TEI-Encoding-Manual-for-The-Syriac-Gazetteer>.
 
 _____
-### 3 December
+## 3 December
 
 #### Discussion
 - Lou Burnard, "Conclusion: What _is_ the TEI?,” What Is the Text Encoding Initiative?: How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/693>.
 
 
 _____
-### 11 December
+## 11 December
 - Final Projects Due
   - TEI Files
   - ODD Customization

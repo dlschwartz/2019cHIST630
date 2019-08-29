@@ -4,10 +4,9 @@ title: Course Description
 permalink: /description/
 ---
 
-# Digital Methods for Historical Research
-
 
 _____
+***HIST 630:*** Digital Methods for Historical Research  
 ***Semester:*** Fall 2019  
 ***Time:*** Thursday 2:15-5:05  
 ***Location:*** Glasscock 205
@@ -20,12 +19,12 @@ _______
 ***Office Hours:*** by appointment
 
 _____
-#### Course Description
+### Course Description
 Introduction to formal methods of analysis in historical research
 using computers; and applying quantitative methods to research problems.  
 
 _____
-#### Learning Outcomes
+### Learning Outcomes
 By the end of the course you will  
  1. Understand text encoding as a digital research methodology for historical research.
  2. Know how to mark up texts using the TEI.
@@ -34,11 +33,11 @@ By the end of the course you will
  5. Know standard best-practices for collaborative digital research.
  
 _____
-#### Prerequisites
+### Prerequisites
 Graduate classification and approval of instructor.
 
 _____
-#### Course Materials
+### Course Materials
 Students will all need to have access to a laptop to which they
 have permission to add software. You should bring that laptop to all class
 sessions. All readings and tutorials required for this seminar are available online.
@@ -46,7 +45,7 @@ Your university credentials should provide access to all course materials. Pleas
 me if you encounter any problems.
 
 _____
-#### Expectations
+### Expectations
 You will note in the class schedule that every class meeting has a heading for
 _Ludi_. This is a Latin word we can translate as "play things." I have
 chosen this term because I want us all to think of class time as an opportunity
