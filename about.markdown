@@ -1,7 +1,7 @@
 ---
 layout: page
-title: History 630
-permalink: /about/
+title: Course Description
+permalink: /description/
 ---
 
 # Digital Methods for Historical Research
