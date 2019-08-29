@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Schedule
+hidden: false
 permalink: /schedule/
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Policies
+hidden: false
 permalink: /policies/
 ---
 

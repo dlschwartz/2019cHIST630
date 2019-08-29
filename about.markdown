@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Welcome
+hidden: false
 permalink: /about/
 ---
 

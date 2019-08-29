@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Assignments
+hidden: false
 permalink: /assignments/
 ---
 
