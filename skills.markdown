@@ -1,5 +1,6 @@
 ---
 layout: page
+hidden: true
 permalink: /skills/
 ---
 
