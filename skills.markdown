@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Skills Presentation
 permalink: /skills/
 ---
+
+## Skills Presentation Assignment
 
 # Assignment details coming Soon!
