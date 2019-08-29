@@ -1,9 +1,8 @@
 ---
 layout: page
-title:
+title: TEI Encoding Assignment
 permalink: /encoding/
 ---
 
-## TEI Encoding Assignment
 
 # Assignment coming soon
