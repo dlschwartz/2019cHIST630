@@ -4,4 +4,4 @@ title: Documentation Wiki
 permalink: /wiki/
 ---
 
-# Coming Soon!
+# Assignment details coming soon
