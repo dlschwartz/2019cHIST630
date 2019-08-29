@@ -4,10 +4,9 @@ title: Course Description
 permalink: /description/
 ---
 
-# Digital Methods for Historical Research
-
 
 _____
+***History 630: Digital Methods for Historical Research***
 ***Semester:*** Fall 2019  
 ***Time:*** Thursday 2:15-5:05  
 ***Location:*** Glasscock 205
