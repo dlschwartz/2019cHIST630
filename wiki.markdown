@@ -1,9 +1,8 @@
 ---
 layout: page
-title:
+title: Documentation Wiki Assignment
 permalink: /wiki/
 ---
 
-## Documentation Wiki Assignment
 
 # Assignment details coming soon
