@@ -31,7 +31,7 @@ By the end of the course you will
  3. Know several methods/technologies for documenting digital projects.
  4. Produce your own digital research.
  5. Know standard best-practices for collaborative digital research.
- 
+
 _____
 ### Prerequisites
 Graduate classification and approval of instructor.
@@ -54,4 +54,4 @@ you should come to class expecting to _play around_ with the course material, to
 and skills you will begin learning outside of class. This approach means there is a high
 likelihood that sometimes things won't work, or at least that they won't work as intended.
 We should all expect this kind of "failure." But failure can be productive. Let's
-all come to class ready to play, have fun even, and learn as we go. 
+all come to class ready to play, have fun even, and learn as we go.
