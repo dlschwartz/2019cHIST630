@@ -21,7 +21,9 @@
 title: Digital Methods for Historical Research
 email: daniel.schwartz@tamu.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the Fall 2019 syllabus for HIST 630 Digital Methods for Historical Research
+  This is the Fall 2019 syllabus for HIST 630 Digital Methods for Historical Research.  
+  This syllabus is copyright Daniel L. Schwartz, 2019. This work is licensed under a Creative Commons 
+  Attribution 4.0 International License and may be freely reused with attribution. 
 baseurl: "/2019cHIST630" # the subpath of your site, e.g. /blog
 url: "localhost4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dlschwartz
