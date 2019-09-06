@@ -25,11 +25,15 @@ _____
 ## 5 September
 
 #### Discussion
-* Alan Liu, "Imagining the New Media Encounter," in _Companion to Digital Literary Studies_, ed. Susan Schreibman and Ray Siemens (Oxford: Blackwell, 2008), <http://digitalhumanities.org:3030/companion/view?docId=blackwell/9781405148641/9781405148641.xml&chunk.id=ss1-3-1&toc.id=0&brand=9781405148641_brand>.
+* Alan Liu, "Imagining the New Media Encounter," in _Companion to Digital Literary Studies_, ed. Susan Schreibman and Ray Siemens 
+(Oxford: Blackwell, 2008), <http://digitalhumanities.org:3030/companion/view?docId=blackwell/9781405148641/9781405148641.xml&chunk.id=ss1-3-1&toc.id=0&brand=9781405148641_brand>.
 * Charlotte Roueché, “Why Do We Mark Up Texts?,” in _Collaborative Research in the Digital Humanities_,
 ed. Willard McCarty and Marilyn Deegan (Farnham, Surrey, England: Ashgate, 2011), <https://ebookcentral.proquest.com/lib/tamucs/reader.action?docID=879680&ppg=168>.
+* Julia Flanders, “The Productive Unease of 21st-century Digital Scholarship,” _Digital Humanities Quarterly_ 3, no. 3 
+(2009), <http://www.digitalhumanities.org/dhq/vol/3/3/000055/000055.html>.
 * Julia Flanders, “Collaboration and Dissent: Challenges of Collaborative Standards for Digital
-Humanities,” _Collaborative Research in the Digital Humanities_, ed. Willard McCarty and Marilyn Deegan (Farnham, Surrey, England: Ashgate, 2011), <https://ebookcentral.proquest.com/lib/tamucs/reader.action?docID=879680&ppg=80>.
+Humanities,” _Collaborative Research in the Digital Humanities_, ed. Willard McCarty and Marilyn Deegan (Farnham, Surrey, England: 
+Ashgate, 2011), <https://ebookcentral.proquest.com/lib/tamucs/reader.action?docID=879680&ppg=80>.
 
 #### _Ludi_
 * Using GitHub  
