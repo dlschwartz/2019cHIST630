@@ -164,8 +164,9 @@ _____
 _____
 ## 21 November
 
-#### Short Skill(s) Presentations
-* See prompt for details
+#### Discussion
+* [Skills Presentations](../skills)
+
 
 #### _Ludi_
 * TEI

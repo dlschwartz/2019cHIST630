@@ -7,7 +7,7 @@ permalink: /assignments/
 
 ## [GitHub Pages Project](../pages)  
 
-## [Skill(s) Presentation](../skills)  
+## [Skills Presentation](../skills)  
 
 ## [TEI Encoding](../encoding)  
 
