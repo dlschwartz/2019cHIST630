@@ -6,7 +6,7 @@ permalink: /policies/
 ---
 
 [Grading Policy](#grading-policy)  
-[Intellectual Property Rights](#intellectual-property-rights) 
+[Intellectual Property Rights](#intellectual-property-rights)  
 [Attendance](#attendance)  
 [ADA Policy Statement](#americans-with-disabilities-act)  
 [Academic Integrity](#academic-integrity)  
