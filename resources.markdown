@@ -12,7 +12,7 @@ Keep an eye out for additions to this list of online resource for doing digital 
 * Syd Bauman and Julia Flanders, "Overview of TEI 
 Customization," <https://wwp.northeastern.edu/outreach/seminars/intro_2018-04/presentations/customization/customization_overview_00.xhtml>. 
 
-* David Birnbaum and Elisa Beshero-Bondar, "XPath for processing XML and managing 
+* Elisa Beshero-Bondar and David Birnbaum, "XPath for processing XML and managing 
 projects,"  <https://ebeshero.github.io/UpTransformation/index.html>.  
 This is the course site for a Digital Humanities Summer Institute course. It has 
 excellent materials for learning XPath, XSLT, Schematron, etc.
