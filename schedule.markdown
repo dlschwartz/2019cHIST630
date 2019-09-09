@@ -75,24 +75,34 @@ _____
 
 #### _Ludi_
 * GitHub Pages and Jekyll
-	* We will spend time in our class session looking at your GitHub Pages assignments, trouble-shooting problems, and considering options for further development.
+	* We will spend time in our class session looking at your GitHub Pages assignments, 
+	trouble-shooting problems, and considering options for further development.
 * Regular Expressions
-	* Kevin Skoglund, "Learning Regular Expressions," _inLearning_, November 21, 2011, <https://www.linkedin.com/learning/learning-regular-expressions>.  
+	* Kevin Skoglund, "Learning Regular Expressions," _inLearning_, November 21, 
+	2011, <https://www.linkedin.com/learning/learning-regular-expressions>.  
 		* Ideally you would do this course first. It offers a thorough introduction to RegEx. However, it's
  quite long. Feel free to skip the parts of section 10 that might not be relevant to your particular use of RegEx.
 		* While there are many RegEx "cheat-sheets" available online, I would recommend that
  you make your own as you watch this course.
-	* Doug Knox, "Understanding Regular Expressions," _The Programming Historian_ 2 (2013), <https://programminghistorian.org/en/lessons/understanding-regular-expressions>.  
-		* This lesson offers a nice example of one way to use RegEx for handling historical texts. It is not as in-depth as the Linked In course above. If you find yourself really strapped for time, you could get away with starting by doing this lesson and then choosing some relevant sections of the other  course to develop skills you think will be relevant to your work.
+	* Doug Knox, "Understanding Regular Expressions," _The Programming Historian_ 2 (
+	2013), <https://programminghistorian.org/en/lessons/understanding-regular-expressions>.  
+		* This lesson offers a nice example of one way to use RegEx for handling historical texts. 
+		It is not as in-depth as the Linked In course above. If you find yourself really strapped for time, 
+		you could get away with starting by doing this lesson and then choosing some relevant sections of the other 
+		course to develop skills you think will be relevant to your work.
 
 
 _____
 ## 3 October
 
 #### Discussion
-* "Tutorial: Introduction to Text Encoding and the TEI," _TEI by Example_, January 19, 2018, <https://teibyexample.org/modules/TBED00v00.htm>.
-* "A Gentle Introduction to XML," _P5: Guidelines for Electronic Text Encoding and Interchange_, <https://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html>.
-* Lou Burnard, "The Structural Organization of a TEI Document," What Is the Text Encoding Initiative?: How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/681>.
+* "Tutorial: Introduction to Text Encoding and the TEI," _TEI by Example_, January 19, 
+2018, <https://teibyexample.org/modules/TBED00v00.htm>.
+* "A Gentle Introduction to XML," _P5: Guidelines for Electronic Text Encoding and 
+Interchange_, <https://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html>.
+* Lou Burnard, "The Structural Organization of a TEI Document," What Is the Text Encoding 
+Initiative?: How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. 
+Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/681>.
 
 #### _Ludi_
 * OCR
@@ -105,8 +115,13 @@ _____
 ## 10 October
 
 #### Discussion
-* Lou Burnard, "The TEI Cornucopia, Part One," What Is the Text Encoding Initiative?: How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/689>.
-* Lou Burnard, "The TEI Cornucopia, Part Two," What Is the Text Encoding Initiative?: How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/1340>.
+* Lou Burnard, "The TEI Cornucopia, Part One," What Is the Text Encoding Initiative?: How to Add Intelligent Markup 
+to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/689>.
+* Lou Burnard, "The TEI Cornucopia, Part Two," What Is the Text Encoding Initiative?: How to Add Intelligent Markup 
+to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/1340>.
+* _P5: Guidelines for Electronic Text Encoding and Interchange_, <https://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html>.  
+Under "Text Body" puruse chapters 6-12 and read carefully one or two of the chapters that will be relevant to your particular 
+text encoding project. Come to class prepared to discuss those chapters.
 
 #### _Ludi_
 * TEI
@@ -116,18 +131,28 @@ _____
 ## 17 October
 
 #### Discussion
-* Lou Burnard, "The TEI Header,” What Is the Text Encoding Initiative?: How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/691>.
+* Lou Burnard, "The TEI Header,” What Is the Text Encoding Initiative?: How to Add Intelligent Markup to Digital 
+Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/691>.
+* "13 Names, Dates, People, and Places," _P5: Guidelines for Electronic Text Encoding and 
+Interchange_, <https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html>.
+
 
 #### _Ludi_
-* TEI
-* TEI Header
+* TEI 
+	* TEI Header
+	* Standoff markup for persons and places
 
 
 _____
 ## 24 October
 
 #### Discussion
-* Lou Burnard, "Customizing the TEI,” What Is the Text Encoding Initiative?: How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/692>.
+* Lou Burnard, "Customizing the TEI,” What Is the Text Encoding Initiative?: How to Add Intelligent 
+Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/692>.
+* James Cummings, "Purifying and Simplifying: Advanced TEI Customization," <https://slides.com/jamescummings/purifying/fullscreen#/>.
+* "22 Documentation Elements," _P5: Guidelines for Electronic Text Encoding and 
+Interchange_, <https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html>.
+
 
 #### _Ludi_
 * TEI Customization
@@ -137,18 +162,25 @@ _____
 _____
 ## 31 October
 
+#### Discussion
+* Wendell Piez and Debbie Lapeyre, "Introduction to Schematron," <http://www.mulberrytech.com/papers/schematron-Philly.pdf>.
+
 #### _Ludi_
 * TEI Customization
-	* Embedding Schematron Rules in an ODD
+	* Schematron
 
 
 _____
 ## 7 November
 
+#### Discussion
+	* Clifford Anderson, "Introduction to TEI 
+	Publisher," <https://gist.github.com/CliffordAnderson/3b0be4b98060930df899e0e094cb98b5>.
+	* "Documentation," _TEI Publisher_, <https://teipublisher.com/exist/apps/tei-publisher/doc/documentation.xml?odd=docbook.odd&root=2.5>.  
+	[Make sure you scroll right.]
+
 #### _Ludi_
 * TEI Publisher
-	* Clifford Anderson, "Introduction to TEI Publisher," <https://gist.github.com/CliffordAnderson/3b0be4b98060930df899e0e094cb98b5>.
-	* "Documentation," _TEI Publisher_, <https://teipublisher.com/exist/apps/tei-publisher/doc/documentation.xml?odd=docbook.odd&root=2.5>. [Make sure you scroll right.]
 
 
 _____
@@ -171,13 +203,16 @@ _____
 #### _Ludi_
 * TEI
 * Documentation using the GitHub Wiki  
-	* Michelle Taylor and David A. Michelson, "TEI Encoding Manual for the Syriac Gazetteer," <https://github.com/srophe/srophe-app-data/wiki/TEI-Encoding-Manual-for-The-Syriac-Gazetteer>.
+	* Michelle Taylor and David A. Michelson, "TEI Encoding Manual for the Syriac 
+	Gazetteer," <https://github.com/srophe/srophe-app-data/wiki/TEI-Encoding-Manual-for-The-Syriac-Gazetteer>.
 
 _____
 ## 3 December
 
 #### Discussion
-* Lou Burnard, "Conclusion: What _is_ the TEI?,” What Is the Text Encoding Initiative?: How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/693>.
+* Lou Burnard, "Conclusion: What _is_ the TEI?,” What Is the Text Encoding Initiative?: 
+How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: 
+OpenEdition Press, 2014, <https://books.openedition.org/oep/693>.
 
 
 _____
