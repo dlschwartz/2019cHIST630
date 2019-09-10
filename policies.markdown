@@ -87,7 +87,7 @@ and welcomes individuals of all ages, backgrounds, citizenships, (dis)abilities,
 education, ethnicities, family statuses, genders, gender identities, geographical
 locations, languages, military experience, political views, races, religions, sexual
 orientations, socioeconomic statuses, and work experiences.
-(See <http://diversity.tamu.edu/<{:target="_blank"} 
+(See <http://diversity.tamu.edu/>{:target="_blank"} 
 & <http://historians.org/pubs/free/professionalstandards.cfm>{:target="_blank"}).
 
 _____
