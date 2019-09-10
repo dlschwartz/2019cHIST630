@@ -20,16 +20,19 @@ excellent materials for learning XPath, XSLT, Schematron, etc.
 * Daniel J. Cohen and Roy Rosenzweig, _Digtial History: A Guide to Gathering, Preserving, 
 and Presenting the Past on the Web_, Center for History and New Media, <http://chnm.gmu.edu/digitalhistory/>{:target="_blank"}.
 
-* Matthew K. Gold, Debates in the Digital Humanities (Minneapolis: University of Minnesota Press, 
+* Matthew K. Gold, ed., _Debates in the Digital Humanities_ (Minneapolis: University of Minnesota Press, 
 2012), <http://proxy.library.tamu.edu/login?url=http://site.ebrary.com/lib/tamu/Doc?id=10551807>{:target="_blank"}.
 
-* Matthew K. Gold and Lauren F. Klein, Debates in the Digital Humanities 2016 (Minneapolis: University of Minnesota Press, 
+* Matthew K. Gold and Lauren F. Klein, eds., _Debates in the Digital Humanities 2016_ (Minneapolis: University of Minnesota Press, 
 2016), <http://proxy.library.tamu.edu/login?url=https://ebookcentral.proquest.com/lib/tamucs/detail.action?docID=4392085>{:target="_blank"}.
 
-* Matthew K. Gold and Lauren F. Klein, Debates in the Digital Humanities 2019 (Minneapolis: University of Minnesota Press, 
+* Matthew K. Gold and Lauren F. Klein, eds., _Debates in the Digital Humanities 2019_ (Minneapolis: University of Minnesota Press, 
 2019), <http://proxy.library.tamu.edu/login?url=https://ebookcentral.proquest.com/lib/tamucs/detail.action?docID=5754589>{:target="_blank"}.
 
 * _Journal of the Text Encoding Initiative_, <https://journals.openedition.org/jtei/>{:target="_blank"}.
+
+* Susan Schreibman, Ray Siemens, and John Unsworth, eds., _A Companion to Digital 
+Humanities_, <http://www.digitalhumanities.org/companion/>{:target="_blank"}.
 
 * TEI listserv: [archives link](https://listserv.brown.edu/archives/tei-l.html){:target="_blank"}; 
 [subscription link](https://listserv.brown.edu/?SUBED1=TEI-L&A=1){:target="_blank"}.
