@@ -10,31 +10,31 @@ permalink: /resources/
 Keep an eye out for additions to this list of online resource for doing digital history.
 
 * Syd Bauman and Julia Flanders, "Overview of TEI 
-Customization," <https://wwp.northeastern.edu/outreach/seminars/intro_2018-04/presentations/customization/customization_overview_00.xhtml>. 
+Customization," <https://wwp.northeastern.edu/outreach/seminars/intro_2018-04/presentations/customization/customization_overview_00.xhtml>{:target="_blank"}. 
 
 * Elisa Beshero-Bondar and David Birnbaum, "XPath for processing XML and managing 
-projects,"  <https://ebeshero.github.io/UpTransformation/index.html>.  
+projects,"  <https://ebeshero.github.io/UpTransformation/index.html>{:target="_blank"}.  
 This is the course site for a Digital Humanities Summer Institute course. It has 
 excellent materials for learning XPath, XSLT, Schematron, etc.
 
 * Daniel J. Cohen and Roy Rosenzweig, _Digtial History: A Guide to Gathering, Preserving, 
-and Presenting the Past on the Web_, Center for History and New Media, <http://chnm.gmu.edu/digitalhistory/>.
+and Presenting the Past on the Web_, Center for History and New Media, <http://chnm.gmu.edu/digitalhistory/>{:target="_blank"}.
 
 * Matthew K. Gold, Debates in the Digital Humanities (Minneapolis: University of Minnesota Press, 
-2012), <http://proxy.library.tamu.edu/login?url=http://site.ebrary.com/lib/tamu/Doc?id=10551807>.
+2012), <http://proxy.library.tamu.edu/login?url=http://site.ebrary.com/lib/tamu/Doc?id=10551807>{:target="_blank"}.
 
 * Matthew K. Gold and Lauren F. Klein, Debates in the Digital Humanities 2016 (Minneapolis: University of Minnesota Press, 
-2016), <http://proxy.library.tamu.edu/login?url=https://ebookcentral.proquest.com/lib/tamucs/detail.action?docID=4392085>.
+2016), <http://proxy.library.tamu.edu/login?url=https://ebookcentral.proquest.com/lib/tamucs/detail.action?docID=4392085>{:target="_blank"}.
 
 * Matthew K. Gold and Lauren F. Klein, Debates in the Digital Humanities 2019 (Minneapolis: University of Minnesota Press, 
-2019), <http://proxy.library.tamu.edu/login?url=https://ebookcentral.proquest.com/lib/tamucs/detail.action?docID=5754589>.
+2019), <http://proxy.library.tamu.edu/login?url=https://ebookcentral.proquest.com/lib/tamucs/detail.action?docID=5754589>{:target="_blank"}.
 
-* _Journal of the Text Encoding Initiative_, <https://journals.openedition.org/jtei/>.
+* _Journal of the Text Encoding Initiative_, <https://journals.openedition.org/jtei/>{:target="_blank"}.
 
-* TEI listserv: [archives link](https://listserv.brown.edu/archives/tei-l.html); 
-[subscription link](https://listserv.brown.edu/?SUBED1=TEI-L&A=1).
+* TEI listserv: [archives link](https://listserv.brown.edu/archives/tei-l.html){:target="_blank"}; 
+[subscription link](https://listserv.brown.edu/?SUBED1=TEI-L&A=1){:target="_blank"}.
 
-* The Programming Historian, <https://programminghistorian.org/>.  
+* The Programming Historian, <https://programminghistorian.org/>{:target="_blank"}.  
 This site contains 80 peer-reviewed, open source, open access lessons covering many of the approaches 
 Historians use in doing and publishing their research.
 

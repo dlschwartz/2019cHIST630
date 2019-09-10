@@ -57,7 +57,7 @@ advance**_ of an absence whether excused or unexcused.
 Each unexcused absence will result in a 2% reduction (out of the 15% possible)
 to the Class Participation portion of the grade.
 
-University Policy: <http://student-rules.tamu.edu/rule07>
+University Policy: <http://student-rules.tamu.edu/rule07>{:target="_blank"}
 
 _____
 ### Americans with Disabilities Act Policy Statement
@@ -68,13 +68,13 @@ be guaranteed a learning environment that provides for reasonable accommodation 
 their disabilities. If you believe you have a disability requiring an accommodation,
 please contact Disability Services, currently located in the Disability Services
 building at the Student Services at White Creek complex on west campus or call
-979-845-1637. For additional information visit <http://disability.tamu.edu/>.
+979-845-1637. For additional information visit <http://disability.tamu.edu/>{:target="_blank"}.
 
 _____
 ### Academic Integrity
 "An Aggie does not lie, cheat or steal,
 or tolerate those who do." Students are expected to be aware of the Aggie Honor
-Council Rules and Procedures, see <http://aggiehonor.tamu.edu/>.
+Council Rules and Procedures, see <http://aggiehonor.tamu.edu/>{:target="_blank"}.
 
 _____
 ### Diversity and Respect
@@ -87,7 +87,8 @@ and welcomes individuals of all ages, backgrounds, citizenships, (dis)abilities,
 education, ethnicities, family statuses, genders, gender identities, geographical
 locations, languages, military experience, political views, races, religions, sexual
 orientations, socioeconomic statuses, and work experiences.
-(See http://diversity.tamu.edu/ & http://historians.org/pubs/free/professionalstandards.cfm).
+(See <http://diversity.tamu.edu/<{:target="_blank"} 
+& <http://historians.org/pubs/free/professionalstandards.cfm>{:target="_blank"}).
 
 _____
 
@@ -111,8 +112,8 @@ with you about the incident that you have shared. In many cases, it will be your
 decision whether or not you wish to speak with that individual. If you would
 like to talk about these events in a more confidential setting, you are
 encouraged to make an appointment with the Student Counseling Service
-(<https://scs.tamu.edu/>).
+(<https://scs.tamu.edu/>{:target="_blank"}).
 
 
 Students and faculty can report non-emergency behavior that causes them to be
-concerned at <http://tellsomebody.tamu.edu>.
+concerned at <http://tellsomebody.tamu.edu>{:target="_blank"}.
