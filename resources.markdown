@@ -20,6 +20,11 @@ excellent materials for learning XPath, XSLT, Schematron, etc.
 * Daniel J. Cohen and Roy Rosenzweig, _Digtial History: A Guide to Gathering, Preserving, 
 and Presenting the Past on the Web_, Center for History and New Media, <http://chnm.gmu.edu/digitalhistory/>.
 
+* _Journal of the Text Encoding Initiative_, <https://journals.openedition.org/jtei/>.
+
+* TEI listserv: [archives link](https://listserv.brown.edu/archives/tei-l.html); 
+[subscription link](https://listserv.brown.edu/?SUBED1=TEI-L&A=1).
+
 * The Programming Historian, <https://programminghistorian.org/>.  
 This site contains 80 peer-reviewed, open source, open access lessons covering many of the approaches 
 Historians use in doing and publishing their research.
