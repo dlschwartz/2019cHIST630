@@ -59,7 +59,7 @@ Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition 
 
 _____
 ## 19 September
-_**There will be no regular class meeting on September 19 as I will be traveling. Instead, you should work on the GitHub Pages assignment.**_
+_**There will be no regular class meeting on September 19 as I will be traveling. Instead, you should work on the [GitHub Pages assignment](../pages).**_
 
 #### _Ludi_
 * GitHub Pages and Jekyll
