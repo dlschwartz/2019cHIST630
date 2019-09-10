@@ -20,6 +20,15 @@ excellent materials for learning XPath, XSLT, Schematron, etc.
 * Daniel J. Cohen and Roy Rosenzweig, _Digtial History: A Guide to Gathering, Preserving, 
 and Presenting the Past on the Web_, Center for History and New Media, <http://chnm.gmu.edu/digitalhistory/>.
 
+* Matthew K. Gold, Debates in the Digital Humanities (Minneapolis: University of Minnesota Press, 
+2012), <http://proxy.library.tamu.edu/login?url=http://site.ebrary.com/lib/tamu/Doc?id=10551807>.
+
+* Matthew K. Gold and Lauren F. Klein, Debates in the Digital Humanities 2016 (Minneapolis: University of Minnesota Press, 
+2016), <http://proxy.library.tamu.edu/login?url=https://ebookcentral.proquest.com/lib/tamucs/detail.action?docID=4392085>.
+
+* Matthew K. Gold and Lauren F. Klein, Debates in the Digital Humanities 2019 (Minneapolis: University of Minnesota Press, 
+2019), <http://proxy.library.tamu.edu/login?url=https://ebookcentral.proquest.com/lib/tamucs/detail.action?docID=5754589>.
+
 * _Journal of the Text Encoding Initiative_, <https://journals.openedition.org/jtei/>.
 
 * TEI listserv: [archives link](https://listserv.brown.edu/archives/tei-l.html); 
