@@ -149,6 +149,8 @@ _____
 #### Discussion
 * Lou Burnard, "Customizing the TEI,” What Is the Text Encoding Initiative?: How to Add Intelligent 
 Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <https://books.openedition.org/oep/692>.
+* Lou Burnard, "What is TEI Conformance, and Why Should You Care?," _Journal of the Text Encoding Initiative_ 
+[Online], Issue 12 (July 2019), <http://journals.openedition.org/jtei/1777>.
 * James Cummings, "Purifying and Simplifying: Advanced TEI Customization," <https://slides.com/jamescummings/purifying/fullscreen#/>.
 * "22 Documentation Elements," _P5: Guidelines for Electronic Text Encoding and 
 Interchange_, <https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html>.
@@ -174,10 +176,10 @@ _____
 ## 7 November
 
 #### Discussion
-	* Clifford Anderson, "Introduction to TEI 
-	Publisher," <https://gist.github.com/CliffordAnderson/3b0be4b98060930df899e0e094cb98b5>.
-	* "Documentation," _TEI Publisher_, <https://teipublisher.com/exist/apps/tei-publisher/doc/documentation.xml?odd=docbook.odd&root=2.5>.  
-	[Make sure you scroll right.]
+* Clifford Anderson, "Introduction to TEI 
+Publisher," <https://gist.github.com/CliffordAnderson/3b0be4b98060930df899e0e094cb98b5>.
+* "Documentation," _TEI Publisher_, <https://teipublisher.com/exist/apps/tei-publisher/doc/documentation.xml?odd=docbook.odd&root=2.5>.  
+[Make sure you scroll right.]
 
 #### _Ludi_
 * TEI Publisher
