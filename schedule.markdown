@@ -215,8 +215,8 @@ _____
 * Lou Burnard, "Conclusion: What _is_ the TEI?,” What Is the Text Encoding Initiative?: 
 How to Add Intelligent Markup to Digital Resources. _Encyclopédie Numérique_. Marseille: 
 OpenEdition Press, 2014, <https://books.openedition.org/oep/693>{:target="_blank"}.
-* Paige Morgan, "How to Get a Digital Humanities Projet off the Ground," 
-<https://www.paigemorgan.net/how-to-get-a-digital-humanities-project-off-the-ground/>{:target="_blank"}.
+* Paige Morgan, "How to Get a Digital Humanities Projet off the 
+Ground," <https://www.paigemorgan.net/how-to-get-a-digital-humanities-project-off-the-ground/>{:target="_blank"}.
 
 
 _____

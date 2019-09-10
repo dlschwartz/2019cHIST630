@@ -57,7 +57,7 @@ advance**_ of an absence whether excused or unexcused.
 Each unexcused absence will result in a 2% reduction (out of the 15% possible)
 to the Class Participation portion of the grade.
 
-University Policy: <http://student-rules.tamu.edu/rule07>{:target="_blank"}
+University Policy: <http://student-rules.tamu.edu/rule07>{:target="_blank"}.
 
 _____
 ### Americans with Disabilities Act Policy Statement
