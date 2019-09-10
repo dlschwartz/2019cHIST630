@@ -20,9 +20,8 @@ this kind of information, you may want to maintain such a CV beyond this class.
 
 Whatever you choose to put up, I would like your site to contain the following:
 * Several pages built using Markdown
-* One or more links to external websites
+* One or more links to external websites that open in a separate tab
 * One or more links to anchors (i.e., section headings designated in markdown with one or more "#" characters)
-* One or more links from one page to anchors on another page
 * One or more photos
 
 You will work through the tutorials and draft your project over the week of 19 September when class does not 
