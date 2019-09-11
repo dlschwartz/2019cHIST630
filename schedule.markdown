@@ -17,7 +17,7 @@ _____
 #### Discussion
 * Themes and approach of the courses
 
-#### _Ludi_ (cf. ["Expectations"](../about/#expectations) on Welcome page)
+#### _Ludi_ (on "_Ludi_" see ["Expectations"](../#expectations) on Welcome page)
 * Installing oXygen XML Editor
 * Setting up a GitHub account
 
