@@ -7,7 +7,7 @@ permalink: /resources/
 
 #### Under construction! 
 
-Keep an eye out for additions to this list of online resource for doing digital history.
+Keep an eye out for additions to this list of online resources for doing digital history.
 
 * Syd Bauman and Julia Flanders, "Overview of TEI 
 Customization," <https://wwp.northeastern.edu/outreach/seminars/intro_2018-04/presentations/customization/customization_overview_00.xhtml>{:target="_blank"}. 
