@@ -14,7 +14,7 @@ discussed in these tutorials. Now that you are proficient in using GitHub, you s
 find the syllabus on GitHub and see what's there. 
 
 As I said, your website can be on any topic you would like. If inspiration doesn't strike, let me suggest
-a digital CV. Here's [a link to my CV](https://dlschwartz.github.io/cv/about/){:target="_blank"} in case you might find it helpful to
+a digital CV. Here's [a link to my CV](https://dlschwartz.github.io/cv/){:target="_blank"} in case you might find it helpful to
 have an example. This is easily built and easily maintained. If you do not have a personal website with
 this kind of information, you may want to maintain such a CV beyond this class.
 
