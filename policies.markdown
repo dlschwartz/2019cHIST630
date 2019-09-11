@@ -8,7 +8,7 @@ permalink: /policies/
 [Grading Policy](#grading-policy)  
 [Intellectual Property Rights](#intellectual-property-rights)  
 [Attendance](#attendance)  
-[ADA Policy Statement](#americans-with-disabilities-act)  
+[ADA Policy Statement](#ada-policy-statement)  
 [Academic Integrity](#academic-integrity)  
 [Diversity and Respect](#diversity-and-respect)  
 [Title IX and Statement on Limits to Confidentiality](#title-ix-and-statement-on-limits-to-confidentiality)
@@ -60,7 +60,7 @@ to the Class Participation portion of the grade.
 University Policy: <http://student-rules.tamu.edu/rule07>{:target="_blank"}.
 
 _____
-### Americans with Disabilities Act Policy Statement
+### ADA Policy Statement
 The Americans with Disabilities Act (ADA) is a federal anti-discrimination statute
 that provides comprehensive civil rights protection for persons with disabilities.
 Among other things, this legislation requires that all students with disabilities
