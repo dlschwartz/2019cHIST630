@@ -37,6 +37,9 @@ Humanities_, <http://www.digitalhumanities.org/companion/>{:target="_blank"}.
 * Lisa Spiro, “Getting Started in Digital Humanities,” _Journal of Digital Humanities_,
  March 10, 2012, <http://journalofdigitalhumanities.org/1-1/getting-started-in-digital-humanities-by-lisa-spiro/>{:target="_blank"}.
 
+* RegexOne: Learn Regular Expressions with simple, interactive 
+exercises, <https://regexone.com/>{:target="_blank"}.
+
 * TEI listserv: [archives link](https://listserv.brown.edu/archives/tei-l.html){:target="_blank"}; 
 [subscription link](https://listserv.brown.edu/?SUBED1=TEI-L&A=1){:target="_blank"}.
 
