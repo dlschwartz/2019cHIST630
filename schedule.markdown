@@ -84,8 +84,8 @@ _____
  quite long. Feel free to skip the parts of section 10 that might not be relevant to your particular use of RegEx.
 		* While there are many RegEx "cheat-sheets" available online, I would recommend that
  you make your own as you watch this course.
-	* Doug Knox, "Understanding Regular Expressions," _The Programming Historian_ 2 (
-	2013), <https://programminghistorian.org/en/lessons/understanding-regular-expressions>{:target="_blank"}.  
+	* Doug Knox, "Understanding Regular Expressions," _The Programming Historian_ 2 
+	(2013), <https://programminghistorian.org/en/lessons/understanding-regular-expressions>{:target="_blank"}.  
 		* This lesson offers a nice example of one way to use RegEx for handling historical texts. 
 		It is not as in-depth as the Linked In course above. If you find yourself really strapped for time, 
 		you could get away with starting by doing this lesson and then choosing some relevant sections of the other 
@@ -225,6 +225,6 @@ Ground," <https://www.paigemorgan.net/how-to-get-a-digital-humanities-project-of
 _____
 ## 11 December
 * Final Projects Due
-	* TEI Files
-	* ODD Customization
-	* Documentation Wiki
+	* [TEI Encoding Assignment](../encoding/)
+	* [ODD Customization](../odd/)
+	* [Documentation Wiki](../wiki/)
