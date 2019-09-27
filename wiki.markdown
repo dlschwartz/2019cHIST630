@@ -24,7 +24,7 @@ You can find an example of what I have in mind in a documentation wiki
 produced by colleagues working on the Syriaca.org Gazetteer: 
 [TEI Encoding Manual for The Syriac Gazetteer](https://github.com/srophe/srophe-app-data/wiki/TEI-Encoding-Manual-for-The-Syriac-Gazetteer){:target="_blank"}
 
-### Output
+### To Submit for Evaluation
 Regardless of the approach you take, your wiki should include the 
 following:
 - Well-designed markdown encoding of your documentation.
