@@ -35,7 +35,7 @@ and different approaches to using the TEI.
 	persons, places, or content that would benefit from a taxonomy describing that 
 	content. Such content could include physical objects, concepts, etc.
 
-#### Encoding Output
+#### To Submit for Evaluation
 - Text Encoding 
 	- You will produce a TEI-encoded XML file for each text or piece of text you 
 	encode. For some students, this will be one XML file. Other students will produce 
@@ -46,8 +46,8 @@ and different approaches to using the TEI.
 	will appear in the header of your main TEI file. If you have one or both of 
 	the others, you will encode that in a separate TEI file. We will discuss standoff 
 	markup in more detail in class.
-- Valid TEI Document
-	- Your TEI file(s) must validate your encoding a customized schema you have created. See, 
+- Valid TEI
+	- Your TEI files must validate against a customized schema you have created. See, 
 	the [ODD Customization Assignment](../odd/).
 
 #### Due Date

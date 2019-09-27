@@ -13,7 +13,7 @@ assignment is one of two ways that you will document
 your TEI encoding. Your TEI files must validate your encoding 
 against a customized schema you have created.
 
-#### Output
+#### To Submit for Evaluation
 - You will produce an ODD file customizing the TEI guidelines 
 for the use of your particular project. It should include 
 the following: 
