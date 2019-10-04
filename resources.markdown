@@ -12,6 +12,14 @@ Keep an eye out for additions to this list of online resources for doing digital
 * Syd Bauman and Julia Flanders, "Overview of TEI 
 Customization," <https://wwp.northeastern.edu/outreach/seminars/intro_2018-04/presentations/customization/customization_overview_00.xhtml>{:target="_blank"}. 
 
+* David Birnbaum, "Digital Humanities," <http://dh.obdurodon.org/>{:target="_blank"}.  
+This site contains a wealth of information, tutorials, and exercises on a wide range of digital 
+humanities research methodologies.
+
+* Elisa Beshero-Bondar, "Digital Humanities Courses," <https://newtfire.org/courses/dh/index.html>{:target="_blank"}.  
+This site contains a wealth of information, tutorials, and exercises on a wide range of digital 
+humanities research methodologies.
+
 * Elisa Beshero-Bondar and David Birnbaum, "XPath for processing XML and managing 
 projects,"  <https://ebeshero.github.io/UpTransformation/index.html>{:target="_blank"}.  
 This is the course site for a Digital Humanities Summer Institute course. It has 
