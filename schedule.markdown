@@ -165,6 +165,8 @@ _____
 ## 31 October
 
 #### Discussion
+* David J. Birnbaum, "What can XPath do for me?," <http://dh.obdurodon.org/introduction-xpath.xhtml>{:target="_blank"}.  
+* David J. Birnbaum, "The XPath Functions We Use Most," <http://dh.obdurodon.org/functions.xhtml>{:target="_blank"}.  
 * Wendell Piez and Debbie Lapeyre, "Introduction to Schematron," <http://www.mulberrytech.com/papers/schematron-Philly.pdf>{:target="_blank"}.
 
 #### _Ludi_
