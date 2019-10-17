@@ -28,6 +28,8 @@ excellent materials for learning XPath, XSLT, Schematron, etc.
 * Daniel J. Cohen and Roy Rosenzweig, _Digtial History: A Guide to Gathering, Preserving, 
 and Presenting the Past on the Web_, Center for History and New Media, <http://chnm.gmu.edu/digitalhistory/>{:target="_blank"}.
 
+* devhints.io XPath Cheat Sheet, <https://devhints.io/xpath>{:target="_blank"}.
+
 * Matthew K. Gold, ed., _Debates in the Digital Humanities_ (Minneapolis: University of Minnesota Press, 
 2012), <http://proxy.library.tamu.edu/login?url=http://site.ebrary.com/lib/tamu/Doc?id=10551807>{:target="_blank"}.
 
