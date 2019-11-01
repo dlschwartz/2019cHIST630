@@ -160,6 +160,7 @@ Interchange_, <https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html>{:ta
 * TEI Customization
 	* ODD
 	* [Powerpoint](https://docs.google.com/presentation/d/1xg5bx1q0DWNh7TUFKm-ioR_5-Xyt8okf6TwFJn6VZNk/edit){:target="_blank"}
+	* [ODD Resources](../ODDresources)
 
 
 _____
