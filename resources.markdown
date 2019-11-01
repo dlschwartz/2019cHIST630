@@ -41,6 +41,8 @@ and Presenting the Past on the Web_, Center for History and New Media, <http://c
 
 * _Journal of the Text Encoding Initiative_, <https://journals.openedition.org/jtei/>{:target="_blank"}.
 
+* [ODD Customization Resources](../ODDresources).
+
 * Susan Schreibman, Ray Siemens, and John Unsworth, eds., _A Companion to Digital 
 Humanities_, <http://www.digitalhumanities.org/companion/>{:target="_blank"}.
 
