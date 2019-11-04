@@ -27,7 +27,9 @@ from which you can cut-and-paste into your ODD as you work.
 * [Additional Documentation](#documentation)
 	* [Code Snippets](#exemplum)
 	* [Prose Description](#remarks)
-
+	
+_____
+_____
 ## <a name="requirements"/>Minimum Requirements for Valid ODD
 
 ### <a name="teiHeader"/>Header: [\<teiHeader\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teiHeader.html){:target="_blank"}
@@ -71,6 +73,8 @@ will be allowed in the customization except the ones listed. Leaving off
 @include and @except simply brings over into your customization all of the 
 elements that are a part of the module indicated.
 
+_____
+_____
 ## <a name="elements"/>Customizing Elements
 
 ### <a name="elementSpec"/>Identifying and Modifying Elements: [\<elementSpec\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementSpec.html){:target="_blank"}
@@ -132,7 +136,7 @@ The customization above would indicate that the only acceptable child node for a
 element is an \<edition\> element. Additionally, the use of @minOccurs and @maxOccurs 
 indicates that this \<edition\> can only appear once.
 
-#### <a name="ordering"/>Ordering Child Elements 
+### <a name="ordering"/>Ordering Child Elements 
 Note that using multiple [\<elementRef\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementRef.html){:target="_blank"} 
 elements will result in the requirement that the elements appear 
 in the order in which they are listed. 
@@ -227,6 +231,8 @@ In this example from the TEI guidelines, the customization permits any one
     </alternate>
 </content>
 ```
+_____
+_____
 
 ## <a name="attributes"/>Customizing Attributes on Elements
 The discussion that follows will focus on how to constrain attributes and 
@@ -324,6 +330,8 @@ the attribute values.
     </attList>
 </elementSpec>
 ```
+_____
+_____
 
 ## <a name="documentation"/>Additional Documentation
 
@@ -366,7 +374,9 @@ of the customization for that element.
     </remarks>
 </elementSpec>
 ```
+
 _____
+
 #### Sources
 The resources on this page were produced by drawing from the following sources:
 * [The TEI Guidelines](https://tei-c.org/){:target="_blank"} 
