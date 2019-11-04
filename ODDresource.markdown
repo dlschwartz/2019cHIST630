@@ -11,16 +11,33 @@ of this material, see the chapter on
 in the TEI Guidelines. It might help to think or this page as a cheatsheet
 from which you can cut-and-paste into your ODD as you work.
 
-## Minimal Requirements for Valid ODD
+### Table of Contents:
+* [Minimum Requirements](#requirements)
+	* [Header](#teiHeader)
+	* [Naming the Customization](#schemaSpec)
+	* [Including/Excluding Elements](#moduleRef)
+* [Customizing Elements](#elements)
+	* [Identifying and Modifying Elements](#elementSpec)
+	* [Child Elements](#content)
+	* [Ordering Child Elements](#ordering)
+* [Customizing Attributes on Elements](#attributes)
+	* [Identifying and Modifying Attributes](#attDef)
+	* [Datatypes](#datatypes)
+	* [Attribute Values](#valItem)
+* [Additional Documentation](#documentation)
+	* [Code Snippets](#exemplum)
+	* [Prose Description](#remarks)
 
-### \<teiHeader\>
+## <a name="requirements"/>Minimum Requirements for Valid ODD
+
+### <a name="teiHeader"/>Header: [\<teiHeader\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teiHeader.html){:target="_blank"}
 The easiest way to see what is minimally required in the header is to 
 open a new file in oXygen and select ODD Customization\[TEI\]. If you have 
 gotten far enough with TEI to be thinking about writing your own customization
 I'm going to assume you understand the basics of the header and what you 
 might want to do with the header in your ODD.
 
-### [\<schemaSpec\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html){:target="_blank"}
+### <a name="schemaSpec"/>Naming the Customization: [\<schemaSpec\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html){:target="_blank"}
 All of the actual customization will go inside the \<schemaSpec\> element.
 
 ```
@@ -32,7 +49,7 @@ All of the actual customization will go inside the \<schemaSpec\> element.
 </schemaSpec>
 ```
 
-### [\<moduleRef\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-moduleRef.html){:target="_blank"}
+### <a name="moduleRef"/>Including/Excluding Elements: [\<moduleRef\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-moduleRef.html){:target="_blank"}
 The \<moduleRef\> element allows you to specify which elements you will 
 include in your customization. You use the @key attribute to name the 
 modules you want to include. You may include all 22 modules but you 
@@ -54,9 +71,9 @@ will be allowed in the customization except the ones listed. Leaving off
 @include and @except simply brings over into your customization all of the 
 elements that are a part of the module indicated.
 
-## Customizing Elements
+## <a name="elements"/>Customizing Elements
 
-### [\<elementSpec\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementSpec.html){:target="_blank"}
+### <a name="elementSpec"/>Identifying and Modifying Elements: [\<elementSpec\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementSpec.html){:target="_blank"}
 The \<elementSpec\> is used to make modifications to an element. These 
 modifications can include changes to content models, deleting attributes 
 from an element, or constraining attribute values for project specific 
@@ -90,9 +107,9 @@ the element. The acceptable values are "add", "delete", "change", and "replace".
 	
 For more on \<elementSpec\>, see [the TEI Guidelines](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html#TDcrystals){:target="_blank"}.
 	
-### [\<content\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-content.html){:target="_blank"}
+### <a name="content"/>Child Elements: [\<content\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-content.html){:target="_blank"}
 By customizing the content of an element you state which elements may appear as children
-of that element. A self-closing \<empty\> element inside [\<content\>] means that no elements 
+of that element. A self-closing \<empty\> element inside \<content\> means that no elements 
 may appear. If the aim of the customization is to specify which elements can appear,
 use \<textNode\> and \<elementRef\> elements. 
 ```
@@ -115,9 +132,10 @@ The customization above would indicate that the only acceptable child node for a
 element is an \<edition\> element. Additionally, the use of @minOccurs and @maxOccurs 
 indicates that this \<edition\> can only appear once.
 
-#### Ordering Child Elements
-Note that using multiple \<elementRef\> elements will result in the requirement that the 
-elements appear in the order in which they are listed. 
+#### <a name="ordering"/>Ordering Child Elements 
+Note that using multiple [\<elementRef\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementRef.html){:target="_blank"} 
+elements will result in the requirement that the elements appear 
+in the order in which they are listed. 
 ```
 <elementSpec ident="place" module="namesdates" mode="change">
     <content>
@@ -130,8 +148,9 @@ elements appear in the order in which they are listed.
 ```
 
 If you want an un-ordered set of elements or if you simply want to be more 
-intentional about element order, you can put your \<elementRef\> elements 
-inside a \<sequence\> element with a @preserveOrder attribute. In the example 
+intentional about element order, you can put your \<elementRef\> elements inside a 
+[\<sequence\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sequence.html){:target="_blank"} 
+element with a @preserveOrder attribute. In the example 
 below, if the value of the @preserveOrder attribute is "true," then the 
 customization functions the same as the example above. If "false," then the 
 elements listed can appear in any order. 
@@ -152,11 +171,13 @@ value equivalent to including the attribute with a value of "false." In general,
 I find it best to err on the side of specificity and put \<elementRef\> 
 elements inside \<sequence\> along with a @preserveOrder attribute.
 
-Where \<sequence\> allows you to indicate what elements can appear in a given context 
-and whether or not they must appear in order, the \<alternate\> elements allows you 
-to specify that one (and only one) of several elements appear. In the example below,
-the \<editor\> element must contain either a \<persName\> element or a text node 
-but it cannot contain both.
+Where \<sequence\> allows you to indicate what elements can appear 
+in a given context and whether or not they must appear in order, the 
+[\<alternate\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-alternate.html){:target="_blank"} 
+elements allows you to specify that one (and only one) of several 
+elements appear. In the example below, the \<editor\> element must 
+contain either a \<persName\> element or a text node but it cannot 
+contain both.
 ```
 <elementSpec ident="editor" module="core" mode="change">
     <content>
@@ -207,5 +228,147 @@ In this example from the TEI guidelines, the customization permits any one
 </content>
 ```
 
-## Customizing Attributes on Elements
-(forthcoming!)
+## <a name="attributes"/>Customizing Attributes on Elements
+The discussion that follows will focus on how to constrain attributes and 
+attribute values in your ODD. Recall that TEI elements are associated with 
+[attribute classes](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/REF-CLASSES-ATTS.html){:target="_blank"}. 
+We won't cover making changes to attribute classes here but you might want 
+to be aware that you can customize attribute classes and add/remove elements 
+to/from classes.  
+
+You can see the discussion of attribute values on [\<elementSpec\>](#elementSpec)
+above. The \<attList\> element allows you to customize the attributes 
+that may appear on an element. The \<desc\> element, which is optional, allows 
+you to provide prose documentation about this attribute customization. 
+
+### <a name="attDef"/>Identifying and Modifying Attributes: [\<attDef\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-attDef.html){:target="_blank"}
+The customization really begins on the \<attDef\> element. 
+
+* The @ident attribute identifies the attribute being customized.	
+* The @mode attribute indicates what action you are performing in the 
+customization. 
+	* **add**: Use this value to allow an attribute where the TEI does 
+		not allow it.
+	* **change**: Use this value to change how an attribute already 
+		allowed on this element by the TEI can be used. This will be the most 
+		customization. This is what allows you to create and enforce a 
+		closed list of attribute values for your project.
+* The @usage attribute indicates whether or not the attribute is required.
+	* **opt**: optional
+	* **rec**: recommended
+	* **req**: required
+
+```
+<elementSpec ident="[add]" mode="change" module="[add]">
+    <attList>
+	    <desc>[add]</desc>
+        <attDef ident="[add]" mode="[add|change]" usage="[opt|rec|req]">
+            ...
+        </attDef>
+    </attList>
+</elementSpec>
+```
+
+### <a name="datatypes"/>Datatypes: [\<datatype\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-datatype.html){:target="_blank"}
+Datatypes are used by the TEI to constrain attribute values. Datatypes 
+are used to require things like a 4-digit year on a @when attribute. You can 
+do much more with datatypes in your customization but we will focus 
+here on requiring a set of attribute values. You can read up on 
+[datatypes](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html#TD-datatypes){:target="_blank"} 
+in the TEI Guidelines. When customizing to require a closed list of attribute values, you want to use 
+"data.enumerated" as the value of the @key attribute.
+
+```
+<attDef ident="[add]" mode="[add|change]" usage="[opt|rec|req]">
+    <datatype>
+        <dataRef key="data.enumerated"/>
+    </datatype>
+	...
+</attDef>
+```
+
+### <a name="valItem"/>Attribute Values: [\<valItem\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-valItem.html){:target="_blank"}
+The following customization requires (usage="req" on \<attDef\>) a closed list of attribute values 
+for the @status attribute on the \<revisionDesc\> element. The value is indicated 
+by the value of the @ident attribute. The \<gloss\> element appears in the 
+auto-complete feature in oXygen and can be very valuable for encoders. The 
+\<desc\> element provides prose documentation for how your project understands 
+the attribute values. 
+
+```
+<elementSpec ident="revisionDesc" module="header" mode="change">
+    <attList>
+        <attDef ident="status" mode="change" usage="req">
+            <datatype>
+                <dataRef key="data.enumerated"/>
+            </datatype>
+			<valList type="closed">
+                <valItem ident="draft">
+                    <gloss>draft</gloss>
+                    <desc>Indicates that this document is more-or-less complete but remains in draft status.</desc>
+                </valItem>
+                <valItem ident="incomplete">
+                    <gloss>incomplete</gloss>
+                    <desc>Indicates that this document is incomplete.</desc>
+                </valItem>
+                <valItem ident="published">
+                    <gloss>published</gloss>
+                    <desc>Indicates that this document has been published.</desc>
+                </valItem>
+                <valItem ident="underReview">
+                    <gloss>under review</gloss>
+                    <desc>Indicates that this document is under review by one or more editors.</desc>
+                </valItem>
+            </valList>
+        </attDef>
+    </attList>
+</elementSpec>
+```
+
+## <a name="documentation"/>Additional Documentation
+
+### <a name="exemplum"/>Documentation with [\<exemplum\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-exemplum.html){:target="_blank"}
+The \<exemplum\> element allows you to include code snippets from your project 
+in order to document your usage of an element and show encoders 
+how to encode according to your schema. Note that you must also include the 
+\<egXML\> element with @xmlns attribute and value from the example below. 
+
+```
+<elementSpec ident="title" module="core" mode="change">
+          ...
+    <exemplum>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <title level="a" xml:lang="en">Edessa — <foreign xml:lang="syr">ܐܘܪܗܝ</foreign>
+            </title>
+        </egXML>
+    </exemplum>
+    <exemplum>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+        </egXML>
+    </exemplum>
+</elementSpec>
+```
+
+### <a name="remarks"/>Documentation with [\<remarks\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-remarks.html){:target="_blank"}
+The \<remarks\> element take a child \<p\> element with a prose description 
+of the customization for that element.
+
+```
+<elementSpec ident="date" module="core" mode="change">
+    ...
+    <remarks versionDate="2016-11-24">
+        <p>A <gi>date</gi> elment includes both a machine-readable version (using attributes like
+        <att>when</att>, <att>notBefore</att>, <att>notAfter</att>) and a human-readable
+        version as text in the element content. See <ref
+        target="http://syriaca.org/exist/apps/srophe/documentation/dates.html">the
+        Syriaca.org documentation</ref> for editorial conventions regarding dates.</p>
+    </remarks>
+</elementSpec>
+```
+_____
+#### Sources
+The resources on this page were produced by drawing from the following sources:
+* [The TEI Guidelines](https://tei-c.org/){:target="_blank"} 
+* Syd Bauman and Julia Flanders, 
+"[Overview of TEI Customization](https://wwp.northeastern.edu/outreach/seminars/intro_2018-04/presentations/customization/customization_overview_00.xhtml){:target="_blank"}."
