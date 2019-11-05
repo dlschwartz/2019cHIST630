@@ -6,8 +6,9 @@ permalink: /ODDresources/
 
 This page contains information and links on the basics of producing an 
 ODD file for customizing the TEI guidelines. For a more detailed discussion 
-of this material, see the chapter on 
-["Documentation Elements"](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html){:target="_blank"} 
+of this material, see the chapters on 
+["Documentation Elements"](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html){:target="_blank"} and 
+["Using the TEI"](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html){:target="_blank"}
 in the TEI Guidelines. It might help to think or this page as a cheatsheet
 from which you can cut-and-paste into your ODD as you work.
 
