@@ -136,6 +136,9 @@ Resources. _Encyclopédie Numérique_. Marseille: OpenEdition Press, 2014, <http
 * "13 Names, Dates, People, and Places," _P5: Guidelines for Electronic Text Encoding and 
 Interchange_, <https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html>{:target="_blank"}.
 
+[//]: # (Add Viglianti, Why TEI Stand-off Markup Authoring Needs Simplification)
+
+
 
 #### _Ludi_
 * TEI 
