@@ -12,6 +12,10 @@ of this material, see the chapters on
 in the TEI Guidelines. It might help to think or this page as a cheatsheet
 from which you can cut-and-paste into your ODD as you work.
 
+This introduction to schema writing shows you how to write an ODD file 
+and generate a RelaxNG schema from that ODD file. You can also write a customized 
+schema using a website maintained by the TEI Consortium called [Roma](https://romabeta.tei-c.org/){:target="_blank"}.
+
 ### Table of Contents:
 * [Minimum Requirements](#requirements)
 	* [Header](#teiHeader)
@@ -28,6 +32,9 @@ from which you can cut-and-paste into your ODD as you work.
 * [Additional Documentation](#documentation)
 	* [Code Snippets](#exemplum)
 	* [Prose Description](#remarks)
+* [Validating against Your Customization](#validate)
+	* [Generating RelaxNG](#generate)
+	* [Associating Your TEI with Your RelaxNG Schema](#associate)
 	
 _____
 _____
@@ -375,11 +382,40 @@ of the customization for that element.
     </remarks>
 </elementSpec>
 ```
-
+_____
 _____
 
-#### Sources
-The resources on this page were produced by drawing from the following sources:
+
+## <a name="validate"/>Validating against Your Customization
+The ODD file is where you write your customization of the TEI schema. In order to validate 
+a TEI document against an actual schema you will need to generate RelaxNG out 
+of your ODD. You can do that in oXygen, which we will discuss below, 
+or by using [Roma](https://romabeta.tei-c.org/){:target="_blank"}. 
+
+### <a name="generate"/>Generating RelaxNG 
+Generate RelaxNG in oXygen by selecting the wrench/arrow button, navigate to the 
+TEI ODD section, and select "TEI ODD to RELAX NG XML." Then select "Apply associated"
+at the bottom. This will create an "out" folder and place the RelaxNG file there.
+![Generate RelaxNG](../images/generate.png)
+
+### <a name="associate"/>Associating Your TEI with Your RelaxNG Schema
+Now that you have a RelaxNG schema generated out of your ODD, you will need to 
+associate your TEI file with that ODD. With your TEI file open in oXygen you can do 
+this by selecting the red push-pin button. In the URL box you have one of two 
+options. You can use a path relative to the location of your TEI file, as in 
+the example below. Alternatively, you can point to the RelaxNG file on the web. 
+In the example below you would un-check the relative path button and put in 
+the link to the "raw" GitHub file: https://raw.githubusercontent.com/dlschwartz/sandbox/master/out/SeverusAntiochLetters.rng.
+![Associate Schema](../images/associate.png)
+
+
+_____
+_____
+
+
+
+#### Acknowledgements 
+The resources on this page were produced with input from the following sources:
 * [The TEI Guidelines](https://tei-c.org/){:target="_blank"} 
 * Syd Bauman and Julia Flanders, 
 "[Overview of TEI Customization](https://wwp.northeastern.edu/outreach/seminars/intro_2018-04/presentations/customization/customization_overview_00.xhtml){:target="_blank"}."
