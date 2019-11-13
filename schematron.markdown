@@ -7,7 +7,7 @@ permalink: /schematron/
 This page contains information and links on the basics of creating and 
 embedding schematron rules into an ODD customization of the TEI. 
 For an introductory tutorial on writing an ODD customization, see 
-the page on [ODD Resources](../ODDResource/). 
+the page on [ODD Resources](../ODDresource/). 
 
 ### Table of Contents:
 * [Introduction](#introduction)
