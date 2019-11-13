@@ -27,10 +27,12 @@ humanities research methodologies.
 
 * devhints.io XPath Cheat Sheet, <https://devhints.io/xpath>{:target="_blank"}.
 
-* [ODD Customization Resources](../ODDresources).
-
 * RegexOne: Learn Regular Expressions with simple, interactive 
 exercises, <https://regexone.com/>{:target="_blank"}.
+
+* Daniel L. Schwartz, [ODD Customization Resources](../ODDresources).
+
+* Daniel L. Schwartz, [Schematron Resources](../schematron).
 
 * [TEI Customization](https://tei-c.org/guidelines/customization/){:target="_blank"}.
 
