@@ -179,7 +179,7 @@ _____
 * TEI Customization
 	* Schematron
 	* [Powerpoint](https://docs.google.com/presentation/d/10z8z4x_lP6wMAtP78l2aYuRQ6WCxHojr_14nfH-MzAw/edit?usp=sharing){:target="_blank"}
-
+	* [Schematron Resources](../schematron)
 
 _____
 ## 7 November

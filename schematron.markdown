@@ -21,7 +21,7 @@ the page on [ODD Resources](../ODDResources/).
 	* [The Difference between ODD and Schematron](#difference)
 	* [Messages and Documentation](#messages)
 	* [Errors and Warnings](#errors)
-	* [XPath Functions](#xpath)
+	* [XPath](#xpath)
 * [Embedding Rules in Your ODD](#embedding)
 * [More Advanced Uses of Schematron](#advanced)
 	* [The \<let\> Element](#let)
@@ -217,7 +217,7 @@ prefers certain values for an attribute but does not require only those values
 you can indicate this with a @role attribute.
 
 ```
-<sch:rule context="tei:body/tei:note/@resp" role="warning">
+<sch:rule context="tei:body//tei:note/@resp" role="warning">
     <sch:assert test=". = '#dls' or . = '#ewb' or . = '#medComp'">
         Preferred values: #dls, #ewb, #medComp
     </sch:assert>
@@ -230,7 +230,13 @@ This can help encoders use the preferred options and if they persists
 in their decision to deviate from the preference, the yellow warning 
 message assists with the editing process.
 
-### <a name="xpath"/>XPath Functions
+### <a name="xpath"/>XPath
+The XPath examples in the code snippets above are all pretty straightforward. 
+As you use Schematron you should remember that all of the XPath 
+axes and functions can be used to set the context of your rules. As your 
+customization develops you will want to think about how you can use these 
+features of XPath to set contexts that will strengthen the ability of your 
+rules to constrain the encoding where you need to do so.
 
 _____ 
 _____ 
@@ -238,27 +244,163 @@ _____
 
 ## <a name="embedding"/>Embedding Rules in Your ODD
 
+Since the the rules in our Schematron file contain namespaces on all 
+elements, we can simply cut-and-paste into our ODD. Schematron rules 
+go inside a \<constraint\> element inside a \<constraintSpec\> element. 
+The @ident attribute provides a name for the rule in the resulting 
+RelaxNG. The @scheme attribute requires the value "schematron" since 
+we are writing Schematron rules.
+```
+<elementSpec ident="p" module="core" mode="change">
+    <content>
+        <sequence preserveOrder="false">
+            <elementRef key="note"/>
+            <elementRef key="pb"/>
+            <elementRef key="persName"/>
+            <elementRef key="placeName"/>
+        </sequence>
+    </content>
+    <constraintSpec ident="pInHeader" scheme="schematron">
+        <constraint>
+            <sch:rule context="tei:teiHeader//p">
+                <sch:report test="tei:note">
+                    A &lt;p&gt; element in the &lt;teiHeader&gt; may not contain a &lt;note&gt; element.
+                </sch:report>
+            </sch:rule>
+        </constraint>
+    </constraintSpec>
+</elementSpec>
+```
+Recall that in this example the \<content\> element articulates all the possible 
+elements that \<p\> can contain in the whole document and our 
+Schematron rule addresses only the use of \<p\> in the header in 
+order to constrain that element differently in that context.
+
 _____ 
 _____ 
 
 
 ## <a name="advanced"/>More Advanced Uses of Schematron
-
+There is a great deal more you can do with Schematron that 
+what we will discuss here. However, the following uses go a bit 
+beyond the very basics and show some powerful ways to validate 
+your TEI using Schematron.
 
 ### <a name="let"/>The \<let\> Element
-
+The \<let\> element allows you to declare a variable. It takes 
+a @name attribute which you will use when you want to call 
+the variable later. It also takes a @value attribute with 
+the path that points to the variable you want to declare.
+```
+<sch:rule context="tei:body//tei:note/@resp">
+    <sch:let name="editorIDs" value="//tei:teiHeader//tei:editor/@xml:id"/>
+    
+</sch:rule>
+```
+The \<let\> element goes inside the \<rule\> element. As we have come to expect 
+the path in the @context attribute sets the context in which the rule will fire. 
+The path in the @value attribute points to one or more values on the 
+@xml:id attribute on any \<editor\> element in the header. 
 
 ### <a name="list"/>Creating a List of Values
+A path often leads to multiple values. If you want to use those values 
+to validate something else in your document, you will need to know several 
+functions. In the example below, the second \<let\> element builds pointer 
+values for the @resp attribute out of @xml:id values on the \<editor\> 
+element. A ```$``` allows you to call a variable. So ```$editorsIDs``` calls 
+the variable extablished in the first \<let\> element. 
 
+```
+<sch:rule context="tei:body//tei:note/@resp">
+    <sch:let name="editorIDs" value="//tei:teiHeader//tei:editor/@xml:id"/>
+    <sch:let name="IDValues" value="for $i in $editorIDs return concat('#', $i)"/>
+    ...
+</sch:rule>
+```
+
+However, the value needed to point to an @xml:id using a @resp attribute begins 
+with a "#". The @value attribute in the second \<let\> element here builds 
+those values. Note that it has to work whether there is one value returned 
+by ```$editorIDs``` or many. This @value attribute says, 'for each instance of 
+the variable in the list ```$editorIDs```, return for this variable a concatenation 
+of the string "#" and each instance.' 
+
+```
+<sch:rule context="tei:body//tei:note/@resp">
+    <sch:let name="editorIDs" value="//tei:teiHeader//tei:editor/@xml:id"/>
+    <sch:let name="IDValues" value="for $i in $editorIDs return concat('#', $i)"/>
+    <sch:assert test=". = $IDValues">
+        ...
+    </sch:assert>
+</sch:rule>
+```
+
+Calling the variable ```$IDValues``` in the @test of the \<assert\> will require 
+the @resp attribute on \<note\> in the \<body\> to contain a pointer to one of 
+the editors in the header. 
+
+Compare this code snippet to the example we used above for \<assert\>:
+```
+<sch:rule context="tei:body//tei:note/@resp">
+    <sch:assert test=". = '#dls' or . = '#ewb' or . = '#medComp'">
+        Preferred values: #dls, #ewb, #medComp
+    </sch:assert>
+</sch:rule>
+```
+
+Writing this Schematron rule required looking at the header and finding 
+all of the values of @xml:id on \<editor\> elements. This works, but 
+using variables means that if an editor is added to the header, the 
+Schematron rule has to be manually changed. Using variables means that 
+Schematron does that work for me. On a large project this can save time 
+and errors.
 
 ### <a name="valueOf"/>Using Values in Messages
-
+Not only do variables help to keep validation up to date as a project 
+evolves, they can also help communicate with encoders as they work. 
+Using a \<value-of\> element with a @select attribute that calls a 
+variable displays the acceptable values in an error message.
+```
+<sch:rule context="tei:body//tei:note/@resp">
+    <sch:let name="editorIDs" value="//tei:teiHeader//tei:editor/@xml:id"/>
+    <sch:let name="IDValues" value="for $i in $editorIDs return concat('#', $i)"/>
+    <sch:assert test=". = $IDValues">
+        Acceptable values: <sch:value-of select="string-join($IDValues, ', ')"/>.
+    </sch:assert>
+</sch:rule>
+```
+"String-join" is another XPath function that is used in this example to 
+created a comma-separated list out of the list of variables called as the 
+first argument of the function.
 
 ### <a name="linking"/>Linking to Your Standoff
+Standoff TEI markup is used to organize information about things 
+appearing in your encoding. Lists of persons and places with name(s), dates, etc. 
+relevant to those entities can be collected there. Each entity is identified 
+with an @xml:id. In the example above, we saw how variable can be used to create 
+pointers to a list of identifiers within a TEI document. Variables can also 
+be used in the same way when the identifiers appear in a differnt document.
 
-
+```
+<sch:rule context="tei:body//tei:persName/@ref">
+    <sch:let name="indexDoc" value="doc('https://raw.githubusercontent.com/dlschwartz/sandbox/master/SeverusAntiochLettersIndex.xml')"/>
+    <sch:let name="personIDs" value="$indexDoc//tei:listPerson/tei:person/@xml:id"/>
+    <sch:let name="personRefValues" value="for $i in $personIDs return concat('#', $i)"/>
+    <sch:assert test=". = $personRefValues">
+        Acceptable values: <sch:value-of select="string-join($personRefValues, ', ')"/>
+    </sch:assert>
+</sch:rule>
+```
+In this example, the first \<let\> points to a file on GitHub (note that you have 
+to point to the "raw" file). The second \<let\> builds a list of @xml:id values 
+and the third \<let\> builds a list of values that point to the entities identified 
+with those @xml:id attributes. 
 _____
 _____ 
 
 #### Acknowledgements
-The resources on this page were produced with input from the following sources:
+This page draws upon the following sources:
+* Elisa Beshero-Bondar and David Birnbaum, "XPath for processing XML and managing 
+projects,"  <https://ebeshero.github.io/UpTransformation/index.html>{:target="_blank"}.
+* Elisa Beshero-Bondar, "Guide to Schema Writing with Schematron," <https://newtfire.org/courses/dh/explainSchematron.html>{:target="_blank"}.
+* Wendell Piez and Debbie Lapeyre, "Introduction to Schematron," <http://www.mulberrytech.com/papers/schematron-Philly.pdf>{:target="_blank"}.
