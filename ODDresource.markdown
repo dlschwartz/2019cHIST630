@@ -415,7 +415,7 @@ _____
 
 
 #### Acknowledgements 
-The resources on this page were produced with input from the following sources:
+This page draws upon the following sources:
 * [The TEI Guidelines](https://tei-c.org/){:target="_blank"} 
 * Syd Bauman and Julia Flanders, 
 "[Overview of TEI Customization](https://wwp.northeastern.edu/outreach/seminars/intro_2018-04/presentations/customization/customization_overview_00.xhtml){:target="_blank"}."
