@@ -26,7 +26,7 @@ the page on [ODD Resources](../ODDResource/).
 * [More Advanced Uses of Schematron](#advanced)
 	* [The \<let\> Element](#let)
 	* [Creating a List of Values](#list)
-	* [Using Values in Messages](#valueOf)
+	* [Using Variables in Messages](#valueOf)
 	* [Linking to Your Standoff](#linking)
 	
 _____
@@ -355,7 +355,7 @@ Schematron rule has to be manually changed. Using variables means that
 Schematron does that work for me. On a large project this can save time 
 and errors.
 
-### <a name="valueOf"/>Using Values in Messages
+### <a name="valueOf"/>Using Variables in Messages
 Not only do variables help to keep validation up to date as a project 
 evolves, they can also help communicate with encoders as they work. 
 Using a \<value-of\> element with a @select attribute that calls a 
