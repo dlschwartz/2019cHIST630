@@ -210,7 +210,7 @@ encoded in particular contexts.
 </sch:rule>
 ```
 
-Note that "\&lt\;" and "\&gt\;" are required instead of "\<" and "\>" because 
+Note that ```&lt;``` and ```&gt;``` are required instead of "\<" and "\>" because 
 these symbols would be understood as code not allowed in this text node.
 When the encoder sees an error message in oXygen these will be rendered 
 as the expected bracket symbols.
@@ -313,8 +313,9 @@ functions. In the example below, the result of the first \<let\> is a list
 of @xml:id attribute values. An @xml:id has a datatype of 
 "[ID](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.html#tei_att.xml-id){:target="_blank"}". 
 The value of the @resp attribute in our TEI that we are trying to constrain with this rule requires a datatype of 
-"[teidata.pointer](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.responsibility.html#tei_att.resp){:target="_blank"}". 
-Variables and XPath functions come together allow us to constrain our TEI.
+"[teidata.pointer](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.responsibility.html#tei_att.resp){:target="_blank"}" 
+and needs a "#" before the value. Variables and XPath functions come together 
+to allow us to constrain our TEI.
 
 ```
 <sch:rule context="tei:body//tei:note/@resp">
@@ -330,8 +331,8 @@ element builds pointer values for the @resp attribute out of @xml:id
 values on the \<editor\> element. Accomplishing this requires several steps in 
 the @value attribute. This @value attribute says, 'for each instance [```$i```] of 
 a variable in the list ```$editorIDs```, return for this variable a concatenation 
-of the string "#" and each instance [```$i```].' Note that this will work whether there 
-is one value returned by ```$editorIDs``` or many.  
+of the string "#" and each instance [```$i```] of the variable.' Note that this will 
+work whether there is one value returned by ```$editorIDs``` or many.
 
 ```
 <sch:rule context="tei:body//tei:note/@resp">
