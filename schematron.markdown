@@ -37,7 +37,7 @@ _____
 A TEI ODD generates a RelaxNG file that articulates a 
 customized grammar for the TEI document it is used to 
 constrain. This 'grammar-based' approach produces a generalized 
-set of constrains that governs how elements and the attributes 
+set of constraints that govern how elements and the attributes 
 they take function at the level of the document. Beyond such 
 general constraints, most projects need a more 'rule-based' 
 approach that can accommodate constraints that only apply 
@@ -69,7 +69,7 @@ additional material inside the root element):
 ### <a name="namespaces"/>Namespaces
 Schematron rules can be embedded in a TEI ODD file but we have to be 
 careful about namespaces. The first thing we want to do is modify the 
-default namespace declarations in our Schematron file. Additing 
+default namespace declarations in our Schematron file. Adding 
 ```<sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"\>``` as the 
 first child element of the root will help us avoid namespace errors. 
 It will require that the rules we write have the "sch:" namespace before 
@@ -106,9 +106,9 @@ Rules appear in a \<rule\> element that appear in a \<pattern\> element.
 The value that Schematron brings to our ODD is the ability to write 
 context-specific rules. We can write general customizations for how 
 a \<p\> element can function in the whole TEI document using pure ODD. 
-However, if some of the behaviors of the \<p\> element differ based on 
-whether it appears in the header or the body of the document then I 
-need Schematron. 
+However, if some of the behaviors of the \<p\> element need to differ based on 
+whether, for example, it appears in the header or the body of the document then we 
+use Schematron. 
 
 ```
 <sch:pattern>
@@ -118,7 +118,7 @@ need Schematron.
 </sch:pattern>
 ```
 
-Any rule that I write inside of this \<sch:rule\> element will apply 
+Any rule that we write inside of this \<sch:rule\> element will apply 
 only when the \<p\> element appears inside \<teiHeader\>. 
 
 Note as well the use of namespaces on all elements, both Schematron and 
@@ -126,7 +126,7 @@ TEI!
 
 
 ### <a name="rules"/>\<report\> and \<assert\> Elements 
-The two main child elements of \<sch:rule\> are \<report\> and \<assert\>. 
+The two main child elements of \<rule\> are \<report\> and \<assert\>. 
 It can be a bit tricky to keep these ideas separate in your mind. The 
 following should help: 
 * \<report\> = "send a message if the following is true"
@@ -136,7 +136,7 @@ following should help:
 	* The rule you write should be for something that has to be true in 
 	your data.
 	
-The following rule send up an error message if a \<p\> element inside 
+The following rule sends up an error message if a \<p\> element inside 
 \<teiHeader\> contains a \<note\> element. A \<note\> element inside a \<p\> 
 element would still be allowed in the \<body\> but it cannot appear in the 
 header.  
@@ -151,7 +151,7 @@ header.
 In this example, the rule indicates that the only acceptable values 
 for the @resp attribute on a \<note\> element inside the \<body\> are 
 "#dls", "#ewb", and "#medComp". Note that the "." in the @test attribute 
-is XPath that indicates the current context, in this case the @resp attribute 
+indicates the current context, in this case the @resp attribute 
 designated above.
 
 ```
@@ -166,10 +166,10 @@ designated above.
 The following example helps make the difference between ODD and Schematron 
 more clear. Here we see the pure ODD customization indicating that 
 in the TEI document associated with this schema only the four listed elements 
-may appear as children of \<p\>. This means that is the TEI for this project, these 
+may appear as children of \<p\>. This means that in the TEI for this project, these 
 four elements may in one place or another appear as children of \<p\>. 
 In some contexts, however, all four are not allowed so Schematron can be used to 
-set that rule.
+set that context-specific rule.
 ```
 <elementSpec ident="p" module="core" mode="change">
     <content>
@@ -193,10 +193,14 @@ set that rule.
 
 ### <a name="messages"/>Messages and Documentation
 The writer of the Schematron rule must write the message that 
-encoders get when they violate the rule by writing something 
-against the rule or failing to write something required by the 
-rule. The message is the text node of the \<report\> or \<assert\>
-element. It should make clear to the encoder what the error is. 
+encoders get when they violate the rule. They can violate a rule 
+by encoding something forbidden by a \<report\> rule or by encoding something 
+that fails to meet the requirements of an \<assert\> rule. The 
+message is the text node of the \<report\> or \<assert\>
+element. It should make clear to the encoder what the error is. These 
+messages also serve to document your project as they state 
+what cannot be encoded in particular contexts and what must be 
+encoded in particular contexts.
 ```
 <sch:rule context="tei:teiHeader//tei:p">
     <sch:report test="tei:note">
@@ -206,7 +210,7 @@ element. It should make clear to the encoder what the error is.
 </sch:rule>
 ```
 
-Note that "&lt;" and &gt; are required instead of \< and \> because 
+Note that "\&lt\;" and "\&gt\;" are required instead of "\<" and "\>" because 
 these symbols would be understood as code not allowed in this text node.
 When the encoder sees an error message in oXygen these will be rendered 
 as the expected bracket symbols.
@@ -225,8 +229,8 @@ you can indicate this with a @role attribute.
 ```
 
 If encoders use a value other than one of these three, they would see 
-an yellow warnign message appear in oXygen rather than a red error message. 
-This can help encoders use the preferred options and if they persists
+a yellow warning message appear in oXygen rather than a red error message. 
+This can help encoders use the preferred options and if they persist
 in their decision to deviate from the preference, the yellow warning 
 message assists with the editing process.
 
@@ -281,7 +285,7 @@ _____
 
 
 ## <a name="advanced"/>More Advanced Uses of Schematron
-There is a great deal more you can do with Schematron that 
+There is a great deal more you can do with Schematron than 
 what we will discuss here. However, the following uses go a bit 
 beyond the very basics and show some powerful ways to validate 
 your TEI using Schematron.
@@ -305,10 +309,12 @@ The path in the @value attribute points to one or more values on the
 ### <a name="list"/>Creating a List of Values
 A path often leads to multiple values. If you want to use those values 
 to validate something else in your document, you will need to know several 
-functions. In the example below, the second \<let\> element builds pointer 
-values for the @resp attribute out of @xml:id values on the \<editor\> 
-element. A ```$``` allows you to call a variable. So ```$editorsIDs``` calls 
-the variable extablished in the first \<let\> element. 
+functions. In the example below, the result of the first \<let\> is a list 
+of @xml:id attribute values. An @xml:id has a datatype of 
+"[ID](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.html#tei_att.xml-id){:target="_blank"}". 
+The value of the @resp attribute in our TEI that we are trying to constrain with this rule requires a datatype of 
+"[teidata.pointer](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.responsibility.html#tei_att.resp){:target="_blank"}". 
+Variables and XPath functions come together allow us to constrain our TEI.
 
 ```
 <sch:rule context="tei:body//tei:note/@resp">
@@ -318,12 +324,14 @@ the variable extablished in the first \<let\> element.
 </sch:rule>
 ```
 
-However, the value needed to point to an @xml:id using a @resp attribute begins 
-with a "#". The @value attribute in the second \<let\> element here builds 
-those values. Note that it has to work whether there is one value returned 
-by ```$editorIDs``` or many. This @value attribute says, 'for each instance of 
-the variable in the list ```$editorIDs```, return for this variable a concatenation 
-of the string "#" and each instance.' 
+A ```$``` calls a variable. So ```$editorsIDs``` in the second \<let\> element calls 
+the variable extablished in the first \<let\> element. The second \<let\> 
+element builds pointer values for the @resp attribute out of @xml:id 
+values on the \<editor\> element. Accomplishing this requires several steps in 
+the @value attribute. This @value attribute says, 'for each instance [```$i```] of 
+a variable in the list ```$editorIDs```, return for this variable a concatenation 
+of the string "#" and each instance [```$i```].' Note that this will work whether there 
+is one value returned by ```$editorIDs``` or many.  
 
 ```
 <sch:rule context="tei:body//tei:note/@resp">
@@ -336,8 +344,8 @@ of the string "#" and each instance.'
 ```
 
 Calling the variable ```$IDValues``` in the @test of the \<assert\> will require 
-the @resp attribute on \<note\> in the \<body\> to contain a pointer to one of 
-the editors in the header. 
+the @resp attribute on \<note\> in the \<body\> to contain a properly-formatted pointer 
+to one of the editors in the header. 
 
 Compare this code snippet to the example we used above for \<assert\>:
 ```
@@ -352,8 +360,8 @@ Writing this Schematron rule required looking at the header and finding
 all of the values of @xml:id on \<editor\> elements. This works, but 
 using variables means that if an editor is added to the header, the 
 Schematron rule has to be manually changed. Using variables means that 
-Schematron does that work for me. On a large project this can save time 
-and errors.
+Schematron does that work for us. On a large project this can save time 
+and prevent errors.
 
 ### <a name="valueOf"/>Using Variables in Messages
 Not only do variables help to keep validation up to date as a project 
@@ -370,14 +378,14 @@ variable displays the acceptable values in an error message.
 </sch:rule>
 ```
 "String-join" is another XPath function that is used in this example to 
-created a comma-separated list out of the list of variables called as the 
+create a comma-separated list out of the list of variables called as the 
 first argument of the function.
 
 ### <a name="linking"/>Linking to Your Standoff
 Standoff TEI markup is used to organize information about things 
 appearing in your encoding. Lists of persons and places with name(s), dates, etc. 
 relevant to those entities can be collected there. Each entity is identified 
-with an @xml:id. In the example above, we saw how variable can be used to create 
+with an @xml:id. In the example above, we saw how a variable can be used to create 
 pointers to a list of identifiers within a TEI document. Variables can also 
 be used in the same way when the identifiers appear in a differnt document.
 
@@ -395,8 +403,10 @@ In this example, the first \<let\> points to a file on GitHub (note that you hav
 to point to the "raw" file). The second \<let\> builds a list of @xml:id values 
 and the third \<let\> builds a list of values that point to the entities identified 
 with those @xml:id attributes. 
+
 _____
 _____ 
+
 
 #### Acknowledgements
 This page draws upon the following sources:
